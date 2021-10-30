@@ -5,6 +5,8 @@ $danger: #f25f25;
 $dark: #222;
 $light: #fff;
 
+$enable-gradients: true !default;
+
 @import "bootstrap";
 
 html{
