@@ -5,8 +5,12 @@ import { Link } from 'react-router-dom';
 
 function HistoryTable() {
 
+    //trigger boolean for forcing a re-render
     const [trigger, setTrigger] = useState(false)
 
+    //Re-renders the history table component
+    //when the trigger value changes after
+    //the user click on the 'x' button
     useEffect((Table) => {
 
         return { Table }
@@ -14,11 +18,15 @@ function HistoryTable() {
     }, [trigger])
 
 
+    // deletes a specific item in local storage
+    // after the user clicks on the 'x' button,
+    // and it also changes the trigger state
     const handleClick = (x) => {
         localStorage.removeItem(x);
         (trigger) ? setTrigger(false) : setTrigger(true)
     }
 
+    // Maps over local storage and displays data
     const Table = (Object.entries({ ...localStorage })).map((rawData, index) => {
 
         return (
