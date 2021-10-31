@@ -1,1 +1,1 @@
-# Magic8BallV2.0
+https://sournachos.github.io/Magic8BallV2.0/
