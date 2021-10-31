@@ -12,7 +12,7 @@ function App() {
       <Switch>
 
         {/* Routes to History page ONLY when URL matches '/history'*/}
-        <Route exact path="/history" component={History} />
+        <Route exact path="/Magic8BallV2.0/history" component={History} />
 
         {/* Error Handling:Redirects to Homepage if anything other than'/history' is typed */}
         <Route component={Home} />
