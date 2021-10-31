@@ -7,6 +7,7 @@ import History from './pages/history';
 function App() {
   return (
     <div className="vw-100 vh-100 text-black" style={{backgroundImage: "radial-gradient(circle,#585858 20%,#f25f25  32%,#25b8f2  90%)"}}>
+ 
     <Router>
 
       <Switch>
@@ -15,11 +16,12 @@ function App() {
         <Route exact path="/history" component={History} />
 
         {/* Error Handling:Redirects to Homepage if anything other than'/history' is typed */}
-        <Route exact path="/"component={Home} />
+        <Route component={Home} />
 
       </Switch>
 
-    </Router>  
+    </Router>
+
     </div>
   );
 }
