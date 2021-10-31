@@ -10,7 +10,7 @@ function History() {
     <div className="d-flex flex-column w-100 h-100 align-items-center pt-0 pt-sm-4" >
 
     {/* Main Title */}
-      <h1 style={{fontSize:"60px"}}>
+      <h1>
         History
       </h1>
 

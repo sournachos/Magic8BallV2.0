@@ -16,5 +16,51 @@ html{
     max-width: 100vw;
     font-family: 'Josefin Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale; 
+  }
+
+button:hover, a:hover{
+  background-image:     linear-gradient(
+      to right, 
+      #585858,
+      #25b8f2 16.65%,
+      #f25f25 16.65%,
+      #585858 33.3%,
+      #25b8f2 33.3%,
+      #f25f25 49.95%,
+      #585858 49.95%,
+      #25b8f2 66.6%,
+      #f25f25 66.6%,
+      #585858 83.25%,
+      #25b8f2 83.25%,
+      #f25f25 100%,
+      #585858 100%
+    );
+  animation:slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+ 25% { transform: rotate(20deg); }
+ 50% { transform: rotate(-20deg); }
+100% { transform: rotate(0deg); }
+}
+
+
+  h1{
+    font-size: 60px;
+  }
+
+  @media only screen and (max-width: 576px) {  
+ 
+    h1{
+      font-size: 50px;
+    }
+
   }

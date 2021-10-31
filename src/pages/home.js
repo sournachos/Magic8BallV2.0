@@ -7,10 +7,10 @@ function Home() {
 
 
   return (
-    <div className="d-flex flex-column w-100 h-75 align-items-center pt-4" >
+    <div className="d-flex flex-column w-100 h-75 align-items-center pt-0 pt-sm-4" >
 
     {/* Main Title */}
-      <h1 className="mh-50" style={{fontSize:"60px"}}>
+      <h1>
         Magic 8-Ball
       </h1>
     {/* 8 Ball Image */}

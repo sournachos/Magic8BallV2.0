@@ -61,7 +61,7 @@ function HistoryTable() {
             </div>
 
             {/* Button that links to the history page */}
-            <a href="/" className="btn bg-gradient-secondary mw-25 w-50 mt-1 mt-sm-4" role="button" aria-label="Button to go back to the homepage" style={{ fontSize: "20px" }}>Home</a>
+            <a href="/" className="btn mw-25 w-50 mt-1 mt-sm-4" role="button" aria-label="Button to go back to the homepage" style={{ fontSize: "20px", backgroundColor: "#25b8f2" }}>Home</a>
 
         </div>
     );
