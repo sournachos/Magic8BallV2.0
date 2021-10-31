@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import Home from './pages/home.js';
 import History from './pages/history';
 
@@ -12,7 +12,7 @@ function App() {
       <Switch>
 
         {/* Routes to History page ONLY when URL matches '/history'*/}
-        <Route exact path="/Magic8BallV2.0/history" component={History} />
+        <Route exact path="/history" component={History} />
 
         {/* Error Handling:Redirects to Homepage if anything other than'/history' is typed */}
         <Route component={Home} />
