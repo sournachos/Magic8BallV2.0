@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 
 function Form() {
@@ -67,8 +68,9 @@ function Form() {
       <button ref={submitRef} onClick={ApiCall} className="btn mt-1 mt-sm-4" aria-label="Button to submit user question" style={{ fontSize: "20px", backgroundColor:"#f25f25" }}>Submit!</button>
 
       {/* Button that links to the history page */}
-      <a href="/history" className="btn mt-1 mt-sm-4" role="button" aria-label="Button to see last searched question on a new page" style={{ fontSize: "20px", backgroundColor:"#25b8f2" }}>History</a>
-
+      <Link to="/history" className="a btn mt-1 mt-sm-4" role="button" aria-label="Button to see last searched question on a new page" style={{ fontSize: "20px", backgroundColor:"#25b8f2" }}>
+      History
+      </Link>
     </div>
   );
 }

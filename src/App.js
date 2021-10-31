@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="vw-100 vh-100 text-black" style={{backgroundImage: "radial-gradient(circle,#585858 20%,#f25f25  32%,#25b8f2  90%)"}}>
  
-    <Router>
+    <Router basename="/Magic8BallV2.0">
 
       <Switch>
 
