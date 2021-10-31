@@ -15,7 +15,7 @@ function App() {
         <Route exact path="/history" component={History} />
 
         {/* Error Handling:Redirects to Homepage if anything other than'/history' is typed */}
-        <Route component={Home} />
+        <Route exact path="/"component={Home} />
 
       </Switch>
 
